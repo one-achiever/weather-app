@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 <body>
-    <div>
+    <div class="container">
         <header>
             <form>
-                <input type="text" placeholder="Enter a city">
-                <input type="submit" value="search">
+                <input type="text" placeholder="Enter a city .." class="text" autofocus>
+                <input type="submit" value="Search" class="search">
             </form>
         </header>
-        <main>
+        <main >
+            <div class="temperature-details">
             <div>
                 <h1>Paris</h1>
-                <p>Tuesday 19:10 scattered clouds <br>Humidity <strong>60%</strong>Wind:4.63 km/h</p>
+                <p>Tuesday 19:10 scattered clouds <br>Humidity <strong>60%</strong>Wind: <strong>4.63km/h</strong></p>
             </div>
             <div>⛅ 27°C </div>
+            </div>
         </main>
         <footer>
             <p>This project was coded by Linder is open-sourced on Github and hosted on Netlify</p>
