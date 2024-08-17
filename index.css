@@ -32,6 +32,21 @@ form .search{
     align-items: center;
     
 }
+.current-temperature{
+    display: flex;
+}
+.temperature-emoji{
+    font-size: 40px;
+}
+.temperature-degree{
+    font-size: 50px;
+    font-weight: bold;
+}
+.temperature-celcius{
+    font-size: 20px;
+    font-weight: 300px;
+    margin-top: 10px;
+}
 p{
     color: grey;
 }
