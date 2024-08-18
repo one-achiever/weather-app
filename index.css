@@ -16,7 +16,7 @@ form .text{
     background-color: rgb(250, 249, 249);
     margin: 10px;
     padding: 10px 30px;
-    width: 50%;
+    width: 60%;
 
 }
 form .search{
@@ -28,7 +28,7 @@ form .search{
 }
 .temperature-details{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     
 }
