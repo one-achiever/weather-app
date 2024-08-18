@@ -47,6 +47,10 @@ form .search{
     font-weight: 300px;
     margin-top: 10px;
 }
+a{
+    color: blueviolet;
+}
+
 p{
     color: grey;
 }
