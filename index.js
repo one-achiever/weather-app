@@ -42,7 +42,33 @@ function handleSubmit(event){
          let textInput = document.querySelector("#text-input");
          findCity(textInput.value);
 }
+function displayForecast(){
+
+
+let days = ["Tue","Wed","Thur","Fri","Sat"];
+
+let forecastHtml = "";
+days.forEach(function(day){
+    forecastHtml =
+     forecastHtml + 
+    ` 
+        <div class="weather-forecast-day">
+            <div  class="weather-forecast-date">${day}</div>
+            <div class="weather-forecast-emoji">⛅</div>
+            <div class="weather-forecast-temperatures">
+                <div class="weather-forecast-temperature">18°C</div>
+                <div class="weather-forecast-temperature">9°C</div>
+            </div>
+        </div> 
+        `;
+});
+
+  forecastElement.innerHTML = forecastHtml;
+}
+let forecastElement = document.querySelector("#forecast");
+
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit",handleSubmit);
-
+                
 findCity("Paris");
+displayForecast();
